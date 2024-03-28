@@ -51,36 +51,26 @@ body {
 }
 
 .underline {
-    content: "";
     background-color: #fff;
     border-radius: 200vh;
     transition: ease-in-out 300ms;
     height: 0.4vh;
-    width: 13vh;
+    /* width: 13vh; */
     position: absolute;
     top: 8vh;
-    opacity: 0;
-    z-index: 1;
 }
 
-.ul1 {
-    display: block;
-    right: 33.5vh;
+.link1:hover ~ .underline {
+    scale: 13vh 0.4vh;
+    translate: 3.3vh;
 }
 
-.ul2 {
-    display: block;
-    right: 18.3vh;
+.link2:hover ~ .underline {
+    translate: 18.3vh;
 }
 
-.ul3 {
-    display: block;
-    right: 3.1vh;
-}
-
-.link1:hover .ul1, .link2:hover .ul2, .link3:hover .ul3 {
-    opacity: 1;
-    transition: ease-in-out 300ms;
+.link3:hover ~ .underline {
+    translate: 33vh;
 }
 
 .burger {

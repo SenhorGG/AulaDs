@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const line1 = document.querySelector('.line1');
     const line2 = document.querySelector('.line2');
     const line3 = document.querySelector('.line3');
-    const underline = document.querySelector('.underline');
 
     burger.addEventListener('click', function () {
         navLinks.classList.toggle('active');
